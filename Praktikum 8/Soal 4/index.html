@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tristan Vivaldy 2172032">
+    <title>index</title>
+</head>
+<style>
+    #kolom {
+        display: table-cell;
+        width: 60px;
+        height: 20px;
+    }
+</style>
+<body>
+    <script>
+        let baris=parseInt(prompt("Jumlah baris:"));
+        let kolom=parseInt(prompt("Jumlah kolom:"));
+        let warna1=parseInt(prompt("Warna 1 (Hexadecimal):"));
+        let warna2=parseInt(prompt("Warna 2 (Hexadecimal):"))
+        for (let b=1;b<=baris;b++) {
+            if (b%2==1) {
+            document.write("<div>")
+            for (let k=1;k <= kolom; k++){
+                if (k%2==1) {
+                document.write("<div id='kolom' style='background-color:#"+warna1+"'>"+b*k+"</div>")
+            }
+            else {
+                document.write("<div id='kolom' style='background-color:#"+warna2+"'>"+b*k+"</div>")
+            }
+            }
+            document.write("</div>")}
+            else {
+                document.write("<div>")
+            for (let k=1;k <= kolom; k++){
+                if (k%2==1) {
+                    document.write("<div id='kolom' style='background-color:#"+warna2+"'>"+b*k+"</div>")
+                }
+                else {
+                    document.write("<div id='kolom' style='background-color:#"+warna1+"'>"+b*k+"</div>")
+                }
+            }
+            document.write("</div>")}
+            }
+        
+    </script>
+</body>
+</html>

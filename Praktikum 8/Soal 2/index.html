@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tristan Vivaldy 2172032">
+    <title>index</title>
+</head>
+<body>
+    <script>
+        let bilangan = parseInt(prompt("Bilangan yang ingin di cek:"))
+        let i = 1
+        let jumlah = 0
+        while (i <= bilangan){
+            if (bilangan%i==0) {
+                jumlah++
+            }
+            i=i+1;
+        }
+        if (jumlah == 2) {
+            document.write ("Bilangan "+ bilangan + " adalah bilangan prima")
+        }
+        else {
+            document.write ("Bilangan "+ bilangan + " bukan bilangan prima")
+        }
+    </script>
+</body>
+</html>

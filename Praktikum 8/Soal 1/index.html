@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tristan Vivaldy 2172032">
+    <title>index</title>
+</head>
+<style>
+    div {
+        font-size: 200px;
+        font-style: italic;
+        text-align: center;
+    }
+</style>
+<body>
+    <script>
+        let i = 1
+        let bilangan = parseInt(prompt("Bilangan inputan:"));
+        let angka = bilangan
+        let hasil = bilangan
+        if (bilangan < 0) {
+        document.write ("<div> Tidak Terdefinisi </div>")        
+    }
+        else {
+            if (bilangan==0) {
+                document.write("Hasil dari " + angka  + "! adalah 1")        
+            }
+            else {
+            while (i < bilangan) {
+            bilangan=bilangan-1
+            hasil=hasil*bilangan
+        }
+        document.write("Hasil dari " + angka  + "! adalah "+ hasil)
+        }
+    }
+        
+
+    </script>
+</body>
+</html>
